@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools >= 68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HaemoUpdate"
+version = "1.0.0"
+requires-python = ">=3.12"
+authors = [
+  {name = "Maxime Deslauriers", email = "mdeslauriers@haemonetics.com"},
+]
+maintainers = [
+  {name = "Maxime Deslauriers", email = "mdeslauriers@haemonetics.com"},
+]
+description = "Performs the installation of a Haemonetics update package"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+[project.scripts]
+haemo-update = "haemo_update.main:main"
